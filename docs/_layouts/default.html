@@ -23,9 +23,14 @@
         </header>
         <section id="downloads" class="clearfix">
           {% if site.show_downloads %}
+          <p>Drag this to your bookmarks bar --></p>
           <a href="javascript:(function(){var getSelectedText=function(){var text='';if(window.getSelection){text=window.getSelection().toString()}else if(document.selection&&document.selection.type!='Control'){text=document.selection.createRange().text} return text};window.open('https://dictionary.cambridge.org/dictionary/english/'+getSelectedText())})()"
-              id="download-bookmark" class="button"><span>Bookmark me!</span></a>
-          {% endif %}
+              id="download-bookmark" class="button"><span>[EasyDictionary 1.0]</span></a>
+          <a href="javascript:(function(){var getSelectedText=function(){var text='';if(window.getSelection){text=window.getSelection().toString()}else if(document.selection&&document.selection.type!='Control'){text=document.selection.createRange().text} return text};window.open('https://dictionary.cambridge.org/dictionary/english/'+getSelectedText())})()"
+              id="download-bookmarkk" class="button"><span>[EasyDictionary 1.0]</span></a>
+          <a href="javascript:(function(){var getSelectedText=function(){var text='';if(window.getSelection){text=window.getSelection().toString()}else if(document.selection&&document.selection.type!='Control'){text=document.selection.createRange().text} return text};window.open('https://dictionary.cambridge.org/dictionary/english/'+getSelectedText())})()"
+              id="download-zip" class="button"><span>[EasyDictionary 1.0]</span></a>
+              {% endif %}
 	{% if site.github.public %}
 	  {% if site.github.is_project_page %}
           <a href="{{ site.github.repository_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
